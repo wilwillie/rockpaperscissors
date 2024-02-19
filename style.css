@@ -1,0 +1,102 @@
+:root{
+    --birugelap: #201658;
+    --birukontras: #1D24CA;
+    --birupasta: #98ABEE;
+    --kuningpasta: #F9E8C9;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+}
+
+.header{    
+    font-family: system-ui;
+    word-spacing: 10px;
+    letter-spacing: 4px;
+    background-color: var(--birugelap);
+    color: var(--kuningpasta); 
+    font-size: 45px;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+
+.game{
+    height: 85%;
+    background-color: var(--birupasta);
+    display: flex;
+    flex-direction: column;
+}
+
+.top-text{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.top-text h2{
+    font-size: 30px;
+}
+
+.top-text p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.display{
+    display: flex;
+    margin: 20px 0px;
+    gap: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.display h3{
+    font-size: 90px;
+    margin-bottom: 20px;
+}
+
+.display p{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.choices button{
+    font-size: 90px;
+    background-color: var(--birukontras);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    transition: 0.3s;
+}
+
+.choices button:hover{
+    background-color: var(--birugelap);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--kuningpasta);
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 90px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
